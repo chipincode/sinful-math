@@ -4,9 +4,9 @@ sinful-math
 sinful-math for node and the browser
 ------------------------------------
 
-The functions defined here have their roots in the [sinful.js](http://guipn.github.com/sinful.js/) project.  
-sinful.js is a functional javascript library that extends the prototypes of the built-in types to provide functional settings similar to Haskell's, and provide for clear, concise and expressive code.
-For detailed information on the API, usage, contributors, license, etc., please dive into the [wiki](https://github.com/guipn/sinful.js/wiki/_pages).
+This project provides simple, safe floating-point math operations with little overhead.  You get basic arithmetic operations without having to store your numbers in special objects.
+
+The functions defined here have their roots in the [sinful.js](http://guipn.github.com/sinful.js/) project.  sinful.js is a functional javascript library that extends the prototypes of the built-in types to provide functional settings similar to Haskell's, and provide for clear, concise and expressive code.  For detailed information on sinful.js, its API, usage, contributors, license, etc., please dive into the [wiki](https://github.com/guipn/sinful.js/wiki/_pages).
 
 ###Usage
 
@@ -22,7 +22,6 @@ Adding with floating point precision safety:
 
 sinful-math can also apply the math operation to an array:
 ```
-
 > add([6.0985, -0.035, -0.08]); // ↦ 5.9835
 
 ```
