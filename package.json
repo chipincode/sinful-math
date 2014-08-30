@@ -1,0 +1,33 @@
+{
+  "name": "sinful-math",
+  "version": "0.0.1",
+  "description": "Simple, safe floating point math.  Based on the Math portion of the sinful.js project at https://github.com/guipn/sinful.js",
+  "keywords": [
+    "sinful",
+    "floating-point",
+    "math"
+  ],
+  "main": "./index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/chipincode/sinful-math",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chipincode/sinful-math.git",
+    "web": "https://github.com/chipincode/sinful-math"
+  },
+  "bugs": {
+    "url": "https://github.com/chipincode/sinful-math/issues",
+    "email": "chipincode@lee3.net"
+  },
+  "author": "chipincode <chipincode@lee3.net> (http://chipincode.github.com)",
+  "license": "CC-SA-BY-3.0"
+}
