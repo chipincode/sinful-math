@@ -9,7 +9,7 @@
   // finite precision.
 
   function multiplier(x) {
-    var converted = x.toFixed ? x.toFixed(15).replace(/(\..*?)(0+)$/, "$1") : x.toString()
+    var converted = x.toFixed && x < 1e-6 ? x.toFixed(15).replace(/(\..*?)(0+)$/, "$1") : x.toString()
     var parts     = converted.split('.');
 
     if (parts.length < 2) {

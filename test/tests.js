@@ -15,6 +15,7 @@ describe("sinful-math", function () {
     it("should add small numbers", function () {
       assert.equal(add(1e-7, 1e-7), 2e-7);
       assert.equal(add(1e-6, 1e-7), 0.0000011);
+      assert.equal(add(1.123456789012345e10, 1e-7), 11234567890.1234501);
     });
 
     it("should add the values in an array", function () {
