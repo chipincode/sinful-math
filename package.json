@@ -1,6 +1,6 @@
 {
   "name": "sinful-math.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple, safe floating point math.  Based on the Math portion of the sinful.js project at https://github.com/guipn/sinful.js",
   "keywords": [
     "sinful",
