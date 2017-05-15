@@ -1,4 +1,4 @@
-;(function ( global ) {
+;(function (global) {
   'use strict';
 
   var liberate = Function.prototype.bind.bind(Function.prototype.call),
@@ -9,7 +9,8 @@
   // finite precision.
 
   function multiplier(x) {
-    var parts = x.toString().split('.');
+    var converted = x.toFixed ? x.toFixed(15).replace(/(\..*?)(0+)$/, "$1") : x.toString()
+    var parts     = converted.split('.');
 
     if (parts.length < 2) {
       return 1;
@@ -70,7 +71,7 @@
       }
 
       var corrFactor = correctionFactor.apply(null, arguments),
-          first = arguments[0];
+          first      = arguments[0];
 
       function cback(accum, curr, currI, O) {
         return accum - correctedValue(curr, corrFactor);
@@ -114,14 +115,15 @@
   sinfulMath['multiply'] = sinfulMath['mul'];
   sinfulMath['divide']   = sinfulMath['div'];
 
-
   // Node/CommonJS
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = sinfulMath;
   }
   // AMD
   else if (typeof define == 'function' && define.amd) {
-    define(function () { return sinfulMath; });
+    define(function () {
+      return sinfulMath;
+    });
   }
   // Browser
   else {
