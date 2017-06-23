@@ -83,5 +83,9 @@ describe("sinful-math", function () {
     it("should return NaN when a non-number is passed as an argument", function () {
       assert(isNaN(divide(0.3, "x")));
     });
+
+    it("should divide big number by a divisor with large precision", function () {
+      assert.equal(divide(25, 0.000034567890123456789012345), 723214.5181760951)
+    })
   });
 });

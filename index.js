@@ -35,7 +35,7 @@
   // floating point multiplication operation
 
   function correctedValue(val, corrFactor) {
-    return parseInt((val * corrFactor).toFixed(0), 10);
+    return (val * corrFactor).toFixed(0) - 0;
   }
 
   // If an array is passed as the first argument to the
@@ -120,7 +120,7 @@
     module.exports = sinfulMath;
   }
   // AMD
-  else if (typeof define == 'function' && define.amd) {
+  else if (typeof define === 'function' && define.amd) {
     define(function () {
       return sinfulMath;
     });
